@@ -27,6 +27,8 @@ def make_app():
 {"path": "./static"})
     ], debug=True)
 
+tornado_app = make_app()
+
 if __name__ == "__main__":
     app = make_app()  
     app.listen(port)  
